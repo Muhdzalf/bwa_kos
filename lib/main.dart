@@ -1,4 +1,4 @@
-import 'package:bwa_kos/pages/home/home_page.dart';
+import 'package:bwa_kos/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         initialRoute: '/',
-        routes: {'/': (context) => HomePage()});
+        routes: {'/': (context) => SplashPage()});
   }
 }
