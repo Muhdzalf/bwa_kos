@@ -41,7 +41,9 @@ class SplashPage extends StatelessWidget {
               ),
               RoundedButton(
                 text: 'Explore Now',
-                onpressed: () {},
+                onpressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },
               )
             ],
           ),
