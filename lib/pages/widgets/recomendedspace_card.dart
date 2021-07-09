@@ -19,7 +19,7 @@ class RecomendedSpaceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 16),
+      margin: EdgeInsets.only(top: 16),
       child: Row(
         children: [
           Expanded(
