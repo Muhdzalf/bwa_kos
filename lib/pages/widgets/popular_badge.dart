@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:bwa_kos/theme.dart';
 
-class PupularBadge extends StatelessWidget {
-  const PupularBadge({
+class PopularBadge extends StatelessWidget {
+  const PopularBadge({
     Key? key,
   }) : super(key: key);
 

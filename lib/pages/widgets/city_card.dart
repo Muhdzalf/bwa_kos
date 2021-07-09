@@ -47,7 +47,7 @@ class CityCard extends StatelessWidget {
                     )),
                   ],
                 ),
-                PupularBadge(),
+                PopularBadge(),
               ],
             )),
       ),
