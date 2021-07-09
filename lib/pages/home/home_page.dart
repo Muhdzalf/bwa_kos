@@ -17,9 +17,9 @@ class HomePage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 24, top: 30),
-                  child: ContentTitle(title: 'Popular Cities'),
+                ContentTitle(title: 'Popular Cities'),
+                SizedBox(
+                  height: 16,
                 ),
               ],
             )

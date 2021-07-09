@@ -11,9 +11,11 @@ class ContentTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: contentTitle,
-    );
+    return Padding(
+        padding: const EdgeInsets.only(left: 24, top: 30),
+        child: Text(
+          title,
+          style: contentTitle,
+        ));
   }
 }
