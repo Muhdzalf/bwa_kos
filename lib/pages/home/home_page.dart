@@ -1,6 +1,4 @@
 import 'package:bwa_kos/pages/widgets/content_title.dart';
-import 'package:bwa_kos/pages/widgets/tipsandguideline_card.dart';
-import 'package:bwa_kos/theme.dart';
 import 'package:flutter/material.dart';
 import 'components/header.dart';
 import 'components/popularcities_list.dart';

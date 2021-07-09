@@ -1,4 +1,5 @@
 import 'package:bwa_kos/pages/widgets/tipsandguideline_card.dart';
+import 'package:bwa_kos/theme.dart';
 import 'package:flutter/material.dart';
 
 class TipsAndGuidaceList extends StatelessWidget {
@@ -15,12 +16,12 @@ class TipsAndGuidaceList extends StatelessWidget {
           TipsandGuidanceListTile(
             name: 'City GuideLines',
             imageUrl: 'assets/icons/city_guidelines.png',
-            timeUpdated: '20 April',
+            updated: '20 April',
           ),
           TipsandGuidanceListTile(
             name: 'Jakarta Fairship',
             imageUrl: 'assets/icons/jakarta_fairship.png',
-            timeUpdated: '20 April',
+            updated: '11 Dec',
           ),
         ],
       ),
