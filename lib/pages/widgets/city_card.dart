@@ -24,11 +24,12 @@ class CityCard extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
-                    flex: 3,
-                    child: Image.asset(
-                      imageUrl,
-                      fit: BoxFit.cover,
-                    )),
+                  flex: 3,
+                  child: Image.asset(
+                    imageUrl,
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 Expanded(
                     child: Container(
                   color: lightGreyColor,
