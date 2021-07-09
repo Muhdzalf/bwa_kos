@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../theme.dart';
+import 'badge.dart';
 
 class RecomendedSpaceCard extends StatelessWidget {
   final String name;
@@ -25,10 +26,8 @@ class RecomendedSpaceCard extends StatelessWidget {
               flex: 3,
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(18),
-                  child: Image.asset(
-                    imageUrl,
-                    height: 110,
-                    fit: BoxFit.cover,
+                  child: Stack(
+                    children: [Image.asset(imageUrl), Badge()],
                   ))),
           SizedBox(
             width: 20,
