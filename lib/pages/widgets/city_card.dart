@@ -1,3 +1,4 @@
+import 'package:bwa_kos/pages/widgets/popular_badge.dart';
 import 'package:flutter/material.dart';
 
 import '../../theme.dart';
@@ -21,27 +22,32 @@ class CityCard extends StatelessWidget {
         child: Container(
             height: 150,
             width: 120,
-            child: Column(
+            child: Stack(
               children: [
-                Expanded(
-                  flex: 3,
-                  child: Image.asset(
-                    imageUrl,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Expanded(
-                    child: Container(
-                  color: lightGreyColor,
-                  child: Center(
-                    child: Text(
-                      city,
-                      style: title.copyWith(
-                        fontSize: 16,
+                Column(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image.asset(
+                        imageUrl,
+                        fit: BoxFit.cover,
                       ),
                     ),
-                  ),
-                )),
+                    Expanded(
+                        child: Container(
+                      color: lightGreyColor,
+                      child: Center(
+                        child: Text(
+                          city,
+                          style: title.copyWith(
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    )),
+                  ],
+                ),
+                PupularBadge(),
               ],
             )),
       ),
