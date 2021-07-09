@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'components/header.dart';
 import 'components/popularcities_list.dart';
 import 'components/recomendedspace_list.dart';
+import 'components/tipsandguidance_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -33,15 +34,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     height: 16,
                   ),
-                  Column(
-                    children: [
-                      TipsandGuidanceListTile(
-                        name: 'City GuideLines',
-                        imageUrl: 'assets/icons/city_guidelines.png',
-                        timeUpdated: '20 April',
-                      )
-                    ],
-                  )
+                  TipsAndGuidaceList()
                 ],
               )
             ],
