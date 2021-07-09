@@ -14,33 +14,36 @@ class CityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(18),
-      child: Container(
-          height: 150,
-          width: 120,
-          child: Column(
-            children: [
-              Expanded(
-                  flex: 3,
-                  child: Image.asset(
-                    imageUrl,
-                    fit: BoxFit.cover,
-                  )),
-              Expanded(
-                  child: Container(
-                color: lightGreyColor,
-                child: Center(
-                  child: Text(
-                    city,
-                    style: title.copyWith(
-                      fontSize: 16,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: Container(
+            height: 150,
+            width: 120,
+            child: Column(
+              children: [
+                Expanded(
+                    flex: 3,
+                    child: Image.asset(
+                      imageUrl,
+                      fit: BoxFit.cover,
+                    )),
+                Expanded(
+                    child: Container(
+                  color: lightGreyColor,
+                  child: Center(
+                    child: Text(
+                      city,
+                      style: title.copyWith(
+                        fontSize: 16,
+                      ),
                     ),
                   ),
-                ),
-              )),
-            ],
-          )),
+                )),
+              ],
+            )),
+      ),
     );
   }
 }

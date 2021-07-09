@@ -1,8 +1,7 @@
-import 'package:bwa_kos/pages/widgets/city_card.dart';
 import 'package:bwa_kos/pages/widgets/content_title.dart';
-import 'package:bwa_kos/theme.dart';
 import 'package:flutter/material.dart';
 import 'components/header.dart';
+import 'components/popularcities_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,17 +21,7 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 16,
                 ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 24),
-                  child: Row(
-                    children: [
-                      CityCard(
-                        imageUrl: 'assets/images/image.png',
-                        city: 'Jakarta',
-                      ),
-                    ],
-                  ),
-                )
+                PopularCitiesList()
               ],
             )
           ],
