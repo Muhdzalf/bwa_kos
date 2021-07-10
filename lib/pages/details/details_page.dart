@@ -22,18 +22,20 @@ class DetailPage extends StatelessWidget {
         children: [
           HeaderImage(),
           ContentCard(
-              child: ListView(scrollDirection: Axis.vertical, children: [
-            ContentHeader(),
-            ContentTitle(title: 'Main Facilities'),
-            MainFacilitiesList(),
-            ContentTitle(title: 'Photos'),
-            PhotosList(),
-            ContentTitle(title: 'Location'),
-            Location(),
-            Container(
-                margin: EdgeInsets.symmetric(vertical: 30, horizontal: 24),
-                child: RoundedButton(text: 'Book Now', onpressed: () {}))
-          ])),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                ContentHeader(),
+                ContentTitle(title: 'Main Facilities'),
+                MainFacilitiesList(),
+                ContentTitle(title: 'Photos'),
+                PhotosList(),
+                ContentTitle(title: 'Location'),
+                Location(),
+                Container(
+                    margin: EdgeInsets.symmetric(vertical: 30, horizontal: 24),
+                    child: RoundedButton(text: 'Book Now', onpressed: () {}))
+              ])),
           NavigationButton(),
         ],
       ),

@@ -12,12 +12,19 @@ class ContentCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.bottomCenter,
-      child: Container(
-        height: MediaQuery.of(context).size.height * 3 / 5,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
-        child: child,
+      child: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.4,
+          ),
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
+            child: child,
+          ),
+        ],
       ),
     );
   }
