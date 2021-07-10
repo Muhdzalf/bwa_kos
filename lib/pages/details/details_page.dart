@@ -1,6 +1,5 @@
 import 'package:bwa_kos/pages/widgets/content_title.dart';
 import 'package:bwa_kos/pages/widgets/rounded_button.dart';
-import 'package:bwa_kos/theme.dart';
 
 import 'package:flutter/material.dart';
 
@@ -34,7 +33,11 @@ class DetailPage extends StatelessWidget {
                 Location(),
                 Container(
                     margin: EdgeInsets.symmetric(vertical: 30, horizontal: 24),
-                    child: RoundedButton(text: 'Book Now', onpressed: () {}))
+                    child: RoundedButton(
+                        text: 'Book Now',
+                        onpressed: () {
+                          Navigator.pushNamed(context, '/call');
+                        }))
               ])),
           NavigationButton(),
         ],
