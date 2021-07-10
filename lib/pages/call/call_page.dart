@@ -1,3 +1,4 @@
+import 'package:bwa_kos/pages/call/components/close_button.dart';
 import 'package:flutter/material.dart';
 
 import 'components/landlord.dart';
@@ -12,7 +13,7 @@ class CallPage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [PhotoProfile(), LandLord()],
+          children: [PhotoProfile(), LandLord(), CustomCloseButton()],
         ),
       ),
     );
