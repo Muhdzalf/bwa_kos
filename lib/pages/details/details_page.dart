@@ -1,3 +1,5 @@
+import 'package:bwa_kos/pages/details/widget/facilities_item.dart';
+import 'package:bwa_kos/pages/widgets/content_title.dart';
 import 'package:bwa_kos/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +20,23 @@ class DetailPage extends StatelessWidget {
           ContentCard(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [ContentHeader()],
+            children: [
+              ContentHeader(),
+              ContentTitle(title: 'Main Facilities'),
+              Container(
+                margin: EdgeInsets.only(top: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    FacilitiesItem(),
+                    FacilitiesItem(),
+                    FacilitiesItem(),
+                  ],
+                ),
+              )
+            ],
           )),
-          NavigationButton()
+          NavigationButton(),
         ],
       ),
     );

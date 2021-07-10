@@ -9,7 +9,7 @@ class ContentHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 30),
+      margin: EdgeInsets.only(left: 24, top: 30, right: 24),
       child: Row(
         children: [
           Column(
