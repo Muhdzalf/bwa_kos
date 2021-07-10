@@ -7,6 +7,7 @@ import 'components/content_header.dart';
 import 'components/header_image.dart';
 import 'components/mainfacilities_list.dart';
 import 'components/navigation_button.dart';
+import 'components/photos_list.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({Key? key}) : super(key: key);
@@ -23,7 +24,9 @@ class DetailPage extends StatelessWidget {
             children: [
               ContentHeader(),
               ContentTitle(title: 'Main Facilities'),
-              MainFacilitiesList()
+              MainFacilitiesList(),
+              ContentTitle(title: 'Photos'),
+              PhotosList()
             ],
           )),
           NavigationButton(),
