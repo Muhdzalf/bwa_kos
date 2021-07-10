@@ -1,6 +1,6 @@
-import 'package:bwa_kos/pages/widgets/bottomnavbar_item.dart';
 import 'package:bwa_kos/pages/widgets/content_title.dart';
 import 'package:flutter/material.dart';
+import 'components/bottomnavbar.dart';
 import 'components/header.dart';
 import 'components/popularcities_list.dart';
 import 'components/recomendedspace_list.dart';
@@ -34,28 +34,15 @@ class HomePage extends StatelessWidget {
                     height: 16,
                   ),
                   TipsAndGuidaceList(),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 24),
-                    margin: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
-                    height: 60,
-                    decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(23)),
-                    child: Row(
-                      children: [
-                        BottomNavBarItem(
-                          imageUrl: 'assets/icons/Icon_home_solid.png',
-                          isActive: true,
-                        ),
-                      ],
-                    ),
-                  )
+                  SizedBox(height: 70)
                 ],
               )
             ],
           ),
         ),
       ),
+      floatingActionButton: BottomNavBar(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
