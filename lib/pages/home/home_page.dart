@@ -1,3 +1,4 @@
+import 'package:bwa_kos/pages/widgets/bottomnavbar_item.dart';
 import 'package:bwa_kos/pages/widgets/content_title.dart';
 import 'package:flutter/material.dart';
 import 'components/header.dart';
@@ -32,7 +33,23 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     height: 16,
                   ),
-                  TipsAndGuidaceList()
+                  TipsAndGuidaceList(),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    margin: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+                    height: 60,
+                    decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(23)),
+                    child: Row(
+                      children: [
+                        BottomNavBarItem(
+                          imageUrl: 'assets/icons/Icon_home_solid.png',
+                          isActive: true,
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               )
             ],
