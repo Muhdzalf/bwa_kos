@@ -22,7 +22,7 @@ class RoundedButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(17))),
         child: Text(
           text,
-          style: title.copyWith(color: Colors.white),
+          style: title.copyWith(color: Colors.white, fontSize: 18),
         ));
   }
 }
