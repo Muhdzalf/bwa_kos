@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:bwa_kos/theme.dart';
 
 class FacilitiesItem extends StatelessWidget {
+  final String imageUrl;
+  final String item;
+  final int itemCount;
+
   const FacilitiesItem({
     Key? key,
+    required this.imageUrl,
+    required this.item,
+    required this.itemCount,
   }) : super(key: key);
 
   @override
@@ -11,7 +18,7 @@ class FacilitiesItem extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          'assets/icons/bar-counter.png',
+          imageUrl,
           height: 32,
         ),
         SizedBox(
@@ -19,11 +26,11 @@ class FacilitiesItem extends StatelessWidget {
         ),
         RichText(
           text: TextSpan(
-              text: '3',
+              text: '$itemCount',
               style: title.copyWith(fontSize: 14, color: purpleColor),
               children: [
                 TextSpan(
-                    text: ' Kitchen',
+                    text: ' $item',
                     style: subtitle.copyWith(color: Colors.black54))
               ]),
         )
