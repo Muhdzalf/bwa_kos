@@ -1,8 +1,6 @@
 import 'package:bwa_kos/pages/widgets/content_title.dart';
 import 'package:bwa_kos/pages/widgets/rounded_button.dart';
-
 import 'package:flutter/material.dart';
-
 import 'components/content_card.dart';
 import 'components/content_header.dart';
 import 'components/header_image.dart';
