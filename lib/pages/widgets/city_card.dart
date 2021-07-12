@@ -1,17 +1,13 @@
+import 'package:bwa_kos/models/city.dart';
 import 'package:bwa_kos/pages/widgets/popular_badge.dart';
 import 'package:flutter/material.dart';
 
 import '../../theme.dart';
 
 class CityCard extends StatelessWidget {
-  final String imageUrl;
-  final String city;
+  final CityModel city;
 
-  const CityCard({
-    Key? key,
-    required this.imageUrl,
-    required this.city,
-  }) : super(key: key);
+  CityCard(this.city);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +25,7 @@ class CityCard extends StatelessWidget {
                     Expanded(
                       flex: 3,
                       child: Image.asset(
-                        imageUrl,
+                        city.imageUrl,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -38,7 +34,7 @@ class CityCard extends StatelessWidget {
                       color: lightGreyColor,
                       child: Center(
                         child: Text(
-                          city,
+                          city.cityName,
                           style: title.copyWith(
                             fontSize: 16,
                           ),
@@ -47,7 +43,7 @@ class CityCard extends StatelessWidget {
                     )),
                   ],
                 ),
-                PopularBadge(),
+                city.ispolular ? PopularBadge() : SizedBox(),
               ],
             )),
       ),
